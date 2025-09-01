@@ -1,0 +1,126 @@
+body{
+   background: url("/assets/images/1254854.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.connect-page {
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+.connect-page .lpm h1{
+    color: #ffffff;
+    font-size: 37px;
+    margin-bottom: 25px;
+}
+.connect-page .giga-form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+}
+/* .connect-page .lpm{
+    width: 450px !important;
+    height:100% !important;
+} */
+.connect-page .all-form{
+    width: 380px;
+    height: 350px;
+    background-color: #ffffff41;
+    display: flex;
+    border-radius: 15px 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.connect-page .meute{
+    display: flex;
+    justify-content: space-around;
+}
+.connect-page .insc{
+    background-color: #f2f2f2;
+    position: absolute;
+    padding: 20px;
+    border-radius: 50%;
+    top: -71px;
+    right: -74px;
+}
+.connect-page .all-form a{
+    background-color: #ffffffd0;
+    position: absolute;
+    padding: 40px;
+    border-radius: 50%;
+    top: -61px;
+    right: -104px;
+    color: rgb(63, 56, 56);
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+    visibility: hidden;
+}
+.connect-page h1{
+    color: #1939c78e;
+    text-align: center;
+    margin-top: 20px;
+}
+.connect-page .btn1, .connect-page .btn2, .connect-page .btn14 input{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.connect-page .btn1 input, .connect-page .btn14 input{
+    border-top: none;
+    border-left: 5px solid #333;
+    border-right: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    margin: 10px 0;
+    padding: 5px 45px;
+    background-color: transparent;
+    height: 25px;
+    width:230px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 25px 0 ;
+    font-weight: 700;
+    text-align: center;
+} 
+
+
+
+
+.connect-page .lpm .bi{
+    color: #ffffff;
+    position: absolute;
+    left: 15px; 
+    top: 15px;
+    font-size: 25px;
+}
+.connect-page .seul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.connect-page .btn2 input{
+    padding: 10px;
+    color: #fff;
+    font-weight: 800;
+    width: auto;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    background-color: #ce9b03fd;
+ 
+}
+

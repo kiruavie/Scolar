@@ -1,0 +1,252 @@
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+
+
+/* ---- ---- --------- ---- ----- -------- ----- ---- ------ --------------- BARRE VERTICAL  --- ---- ---- ------ ------ ------- ---------- ------ ---- --- ------ -- ---- */
+
+
+
+.all-barre-verticale{
+    all: unset;
+    position: fixed;
+    width: 180px;
+    z-index: 6;
+    background-color: #272c5f;
+    color: #fff;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-radius: 0px 20px 0 0;
+}
+.section-barre-verticale{
+    display: flex;
+    align-items: start;
+    height: 100%;
+    width: 180px;
+    position: relative;
+}
+
+.corps-barre-verticale{
+    width: 100%;
+}
+
+.logo{
+    color: #8e909b;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    border-bottom: 2px dotted #ffffff;
+}
+.logo div{
+    color: #ebd00a;
+    font-weight: 600;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.logo img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.touche{
+    all: unset;
+    margin-top: 880px;
+}
+.touche ul{
+    all: unset;
+    
+}
+.touche ul li{
+    margin: 10px 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.touche .haut-touche {
+    margin-top: 10px;
+    color: #8fa820;
+}
+
+.touche .haut-touche li a{
+    all: unset;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    color: #ffffff;
+    font-weight: 700;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.touche .haut-touche li a:hover, .touche .dead li a:hover{
+    all: unset;
+    filter: drop-shadow(0 0 2em #646cffaa);
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    color: #fa8c16;
+    font-weight: 700;
+    border-radius: 0 50px 50px 0px;
+    background-color: #000000;
+    box-sizing: border-box;
+    transition: .4s all;
+    cursor: pointer;
+}
+
+
+.touche .dead{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+
+.touche .dead li button{
+    all: unset;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    height: 100%;
+    color: #ffffff;
+    background-color: #2c3e50;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.touche .dead li button:hover{
+    transition: .5s;
+    font-size: 25px;
+    color: #000000;
+    background-color: #ffffff;
+
+}
+
+.touche i{
+    font-size: 15px;
+    display: none;
+}
+
+
+
+
+
+
+/* ---- ---- --------- ---- ----- -------- ----- ---- ------ --------------- BARRE HORINZONTALE  --- ---- ---- ------ ------ ------- ---------- ------ ---- --- ------ -- ---- */
+
+
+
+
+.all-barre-horizontal{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 160px);
+    height: 70px;
+    margin-left: 0;
+    display: flex;
+    z-index: 5;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ec9108;
+}
+.all-barre-horizontal .corps-horizontal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+
+.corps-horizontal .title-dash{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+
+#profil{
+    width: 40%;
+    height: 70%;
+    border-radius: 50px 50px 0px 50px;
+    background-color: #0000004f;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    right: 10px;
+    font-weight: 700;
+}
+#profil:hover #deco-profil{
+    visibility: visible; 
+}
+#conprofil{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+#deco-profil{
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #00000032;
+    visibility: hidden;
+}
+#deco-profil li{
+    text-align: center;
+    height: 40px;
+}
+#deco-profil li a{
+    display: block;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 800;
+}
+#deco-profil li a:hover{
+    background-color: #ffffff6a;
+    color: #000000;
+}
+/* ---- ---- --------- ---- ----- -------- ----- ---- ------ --------------- CONTENUE PAGE  --- ---- ---- ------ ------ ------- ---------- ------ ---- --- ------ -- ---- */
+
+
+

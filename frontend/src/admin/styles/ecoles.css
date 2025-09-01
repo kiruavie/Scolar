@@ -1,0 +1,297 @@
+.main-content-ecoles {
+  background: url(/assets/images/1254854.jpg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 70px;
+  left: 180px;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selection-ecoles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Effet de fixed et df des cards */
+
+.main-content-ecoles .all-ecoles {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 10px;
+}
+
+.main-content-ecoles .all-ecoles .gauche {
+  position: fixed;
+  top: 70px;  
+  left: 180px;  
+  width: 500px; 
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.main-content-ecoles .all-ecoles .droite {
+  grid-column: 2;
+  overflow-y: auto;
+  margin-top: 15px;
+}
+
+
+/* Formulaire et Rangement */
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff2c;
+  padding: 15px;
+  border-radius: 15px;
+}
+.form-container .team-ecoles{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+ .form-group{
+  display: flex;
+  flex-direction: column;
+}
+ .form-group label{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+ .form-group input{
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-left: #fff solid 2px;
+  border-bottom: #fff solid 2px;
+  color: #fff;
+}
+ .form-group select{
+  width: 230px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  border: #fff solid 2px;
+  color: #000000;
+}
+
+.form-container .envoie{
+  width: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.form-container .btn-envoie{
+  width: 150px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #0ba240c3;
+}
+.form-container .btn-envoie2{
+  width: 150px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #d0381abe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style card */
+
+.avertissement-aucun-ecoles {
+  position: absolute;
+}
+
+
+.btn-warning {
+  background: #ffb020;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.btn-danger {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.liste {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.liste-ecoles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.ecole-card {
+  margin: 5px;
+  text-align: center;
+  background: #6aabfad6;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ecole-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.ecole-card h4 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.ecole-card p {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ecole-actions {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ecole-actions button{
+  width: 40%;
+  margin-top: 12px;
+}
+
+
+/* ------------- */
+
+.name-sex{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* PopUp  */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Message3rror {
+  text-align: center;
+  position: absolute;
+  background-color: #1c7509;
+  color: #ffffff;
+  display: block;
+  top: 20%;
+  left: 50%;
+  width: 20%;
+  text-align: center;
+  align-self: center;
+}
